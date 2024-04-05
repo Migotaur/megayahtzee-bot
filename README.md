@@ -41,33 +41,33 @@ If the total of all the points from this is equal to 112 points or greater, then
 ### Wildcard Scores
 | Set | Description | Points |
 | ----------- | ----------- | ----------|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
+| Whatever | Any arbitrary set of dice | Sum of all dice values|
+| Oddball | Any arbitrary set of dice | Sum of all 'odd' dice values (1,3,5,7)|
+| Even Steven | Any arbitrary set of dice | Sum of all 'even' dice values (2,4,6)|
+| Prime Parade | Any arbitrary set of dice | Sum of all 'prime' dice values (2,3,5,7)|
+| Binary Blast | Any arbitrary set of dice | Sum of all 'binary' dice values (1,2,4)|
 
 ### Complex Clusters
 | Set | Description | Points |
 | ----------- | ----------- | ----------|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
+| Triple Double | X | X|
+| Double Triple | X | X|
+| Full Full House | X | X|
+| Straight Straight | X | X|
+| Packed House | X | X|
+| Larger Straight | X | X|
+| 6 of a Kind | X | X|
 
 ### Super Special Rolls
 | Set | Description | Points |
 | ----------- | ----------- | ----------|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
-| X | X | X|
+| Party Boat | X | X|
+| Meteor Shower | X | X|
+| Great Pyramids | X | X|
+| Meaning of Life | X | X|
+| Lucky Stevens | X | X|
+| Seventh Wheeling | X | X|
+| Comet in the Sky | X | X|
+| Odd One Out | X | X|
+| Largest Straight | X | X|
+| MEGAYAHTZEE | A set where all seven dice is the same value | X|
