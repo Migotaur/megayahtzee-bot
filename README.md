@@ -1,3 +1,73 @@
 # Megayahtzee
 Over-complicated and extremely exaggerated version of one of my favorite dice games, Yahtzee, developed in Javascript. Rather than five 6-sided dice, you now play with seven 7-sided dice. There are new rolls to attempt to achieve in this version, can you score them all? 
 Published on my site. You can play it online here: https://starke.gg/programming/games/megayahtzee
+
+## Objective
+Similar to traditional Yahtzee, the objective for Megayahtzee is to maximize your total score through trials of rolling/rerolling dice such that the values on the dice align with a particular set. Within Megayahtzee scoring, there are four possible rankings to achieve:
+
+| Ranking | Points | Description |
+| ----------- | ----------- | ----------|
+| ★ | 1500 - 1749 | Demonstrates a solid grasp of game mechanics and strategy. |
+| ★★ | 1750 - 1874 | Excellent, requires careful planning and risk management. |
+| ★★★ | 1875 - 1999 | Perfect, displays incredible precision and strategic genius. |
+| ★★★★ | 2000+ | Virtually impossible, unfathomable probability analysis. |
+
+## Rules
+You are given seven 7-sided dice. In each round, you may roll the dice up to 4 times. After each roll, you may select which dice you want to keep static (don't want to reroll) and reroll the other dice. Alternativly, you can opt to accept the score for a particular set. After four rolls, you must accept a score for a set (even if it that provides no points). Once you've accepted a score for a particular set, that score for that set is final and you can no longer select that set. The game ends after 34 rounds (since there are 34 sets) when the scores for all sets have been finalized.
+
+## Scoring
+### Basic Tallies (Upper Level)
+| Set | Description | Points |
+| ----------- | ----------- | ----------|
+| Aces | A set where a dice has a value of 1 | 1 * [Number of dice w/ value of 1] |
+| Twos |  A set where a dice has a value of 2 | 2 * [Number of dice w/ value of 2] |
+| Threes |  A set where a dice has a value of 3 | 3 * [Number of dice w/ value of 3] |
+| Fours | A set where a dice has a value of 4 | 4 * [Number of dice w/ value of 4] |
+| Fives |  A set where a dice has a value of 5 | 5 * [Number of dice w/ value of 5] |
+| Sixes |  A set where a dice has a value of 6 | 6 * [Number of dice w/ value of 6] |
+| Sevens | A set where a dice has a value of 7 | 7 * [Number of dice w/ value of 7] |
+
+If the total of all the points from this is equal to 112 points or greater, then a bonus of 75 points will be added to the player's score.
+
+### Common Combos
+| Set | Description | Points |
+| ----------- | ----------- | ----------|
+| 4 of a Kind | A set where there are 4 dice with the same value | (8 * [Common Number in 4pack]) + ([Common Number in 4pack] * [Number of 'extra' dice with common number])|
+| 5 of a Kind | A set where there are 5 dice with the same value | (10 * [Common Number in 5pack]) + ([Common Number in 5pack] * [Number of 'extra' dice with common number])|
+| Full House |  A set where there is a 3pack of one number, and a pair of another number | 25 |
+| Small Straight | A set that contains any four sequential dice  | 30|
+| Large Sraight |  A set that contains any five sequential dice | 40 |
+
+### Wildcard Scores
+| Set | Description | Points |
+| ----------- | ----------- | ----------|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+
+### Complex Clusters
+| Set | Description | Points |
+| ----------- | ----------- | ----------|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+
+### Super Special Rolls
+| Set | Description | Points |
+| ----------- | ----------- | ----------|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
+| X | X | X|
