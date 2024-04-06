@@ -19,24 +19,24 @@ You are given seven 7-sided dice. In each round, you may roll the dice up to 4 t
 ### Basic Tallies (Upper Level)
 | Set | Description | Points |
 | ----------- | ----------- | ----------|
-| Aces | A set where a dice has a value of 1 | 1 * [Number of dice w/ value of 1] |
-| Twos |  A set where a dice has a value of 2 | 2 * [Number of dice w/ value of 2] |
-| Threes |  A set where a dice has a value of 3 | 3 * [Number of dice w/ value of 3] |
-| Fours | A set where a dice has a value of 4 | 4 * [Number of dice w/ value of 4] |
-| Fives |  A set where a dice has a value of 5 | 5 * [Number of dice w/ value of 5] |
-| Sixes |  A set where a dice has a value of 6 | 6 * [Number of dice w/ value of 6] |
-| Sevens | A set where a dice has a value of 7 | 7 * [Number of dice w/ value of 7] |
+| Aces | Count and add only Aces | Sum of all Aces |
+| Twos | Count and add only Twos. | Sum of all Twos |
+| Threes | Count and add only Threes. | Sum of all Threes |
+| Fours | Count and add only Fours. | Sum of all Fours |
+| Fives |  Count and add only Fives. | Sum of all Fives |
+| Sixes | Count and add only Sixes. | Sum of all Sixes |
+| Sevens | Count and add only Sevens.| Sum of all Sevens |
 
 If the total of all the points from this is equal to 112 points or greater, then a bonus of 75 points will be added to the player's score.
 
 ### Common Combos
 | Set | Description | Points |
 | ----------- | ----------- | ----------|
-| 4 of a Kind | A set where there are 4 dice with the same value | (8 * [Common Number in 4pack]) + ([Common Number in 4pack] * [Number of 'extra' dice with common number])|
-| 5 of a Kind | A set where there are 5 dice with the same value | (10 * [Common Number in 5pack]) + ([Common Number in 5pack] * [Number of 'extra' dice with common number])|
-| Full House |  A set where there is a 3pack of one number, and a pair of another number | 25 |
-| Small Straight | A set that contains any four sequential dice  | 30|
-| Large Sraight |  A set that contains any five sequential dice | 40 |
+| 4 of a Kind | Four dice of the same number. | (8 × Dice in 4-of-a-Kind) + Extras of the same Number|
+| 5 of a Kind | A set where there are 5 dice with the same value | (10 × Dice in 5-of-a-Kind) + Extras of the same Number|
+| Full House | Three dice of the same number and two dice of the same (different) number. | 25 |
+| Small Straight | Sequence of four consecutive numbers. | 30|
+| Large Sraight | Sequence of five consecutive numbers.| 40 |
 
 ### Wildcard Scores
 | Set | Description | Points |
@@ -50,7 +50,7 @@ If the total of all the points from this is equal to 112 points or greater, then
 ### Complex Clusters
 | Set | Description | Points |
 | ----------- | ----------- | ----------|
-| Triple Double | X | X|
+| Triple Double | Three different pairs of dice. | 15 + (2 × Sum of each pair) |
 | Double Triple | X | X|
 | Full Full House | X | X|
 | Straight Straight | X | X|
